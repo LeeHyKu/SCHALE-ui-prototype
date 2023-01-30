@@ -1,0 +1,57 @@
+.glitch-head {
+    color: rgba(255, 255, 255, .9);
+    text-shadow: .08em 0px rgba(124, 247, 244, .5);
+    font-size: min(9vw, 9vh, 4.5em);
+    font-family: 'Segoe UI Variable Small';
+    font-weight: bold;
+    text-align: center;
+}
+
+.glitch-description {
+    margin-top: .3em;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: .08em 0px rgba(124, 247, 244, .5);
+    font-size: min(5vw, 5vh, 2.5em);
+    line-height: 1.25em;
+    font-family: "경기천년제목", Bold;
+    text-align: center;
+}
+
+html, body, .main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: radial-gradient(ellipse at left bottom, #fae1e4, #70c9f3);
+}
+
+.headcon {
+    display: flex;
+    flex-direction: column;
+}
+
+#backgrid-1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("./grid.svg") repeat center;
+    background-size: 150px;
+    z-index: -1;
+}
+
+#backgrid-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("./triangle.svg") repeat center;
+    background-size: 900px auto;
+    z-index: -2;
+}
