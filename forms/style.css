@@ -1,0 +1,43 @@
+.buttongrid {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.kivotos-round {
+    max-width: min-content;
+    border-radius: 25px;
+    background: url("./triangle.svg") repeat, #8edfeb;
+    background-size: 170px auto;
+    border: none;
+    padding: 13px 100px;
+    color: white;
+    font: 'Segoe UI Variable Small';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kivotos-input {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+    border: 3px solid rgb(160, 160, 160);
+    border-radius: 5px;
+}
+
+.kivotos-input:focus-within {
+    border: 3px solid rgb(100, 100, 100) !important;
+    border-radius: 5px !important;
+}
+
+.kivotos-input::before {
+    content: url("./person.svg");
+}
+
+.kivotos-input-text {
+    border: none;
+}
+
+.kivotos-input-text:focus {
+    outline: none;
+}
